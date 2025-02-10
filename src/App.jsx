@@ -21,10 +21,10 @@ function App() {
   useEffect(() => {
     const fetchImages = async () => {
       try {
-        const response1 = await fetch('https://api.waifu.pics/sfw/waifu');
+        const response1 = await fetch('https://api.waifu.pics/nsfw/waifu');
         const data1 = await response1.json();
 
-        const response2 = await fetch('https://api.waifu.pics/sfw/waifu');
+        const response2 = await fetch('https://api.waifu.pics/nsfw/waifu');
         const data2 = await response2.json();
 
         setImages([
